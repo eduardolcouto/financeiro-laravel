@@ -1,6 +1,6 @@
 ### Sistema Financeiro feito em Laravel para estudos ###
 
-__ Setup __
+**Setup**
 
 ```Shell
 composer require doctrine/dbal
