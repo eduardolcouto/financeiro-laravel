@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Finlaravel\Providers\AppServiceProvider::class,
+        Finlaravel\Providers\AuthServiceProvider::class,
+        // Finlaravel\Providers\BroadcastServiceProvider::class,
+        Finlaravel\Providers\EventServiceProvider::class,
+        Finlaravel\Providers\RouteServiceProvider::class,
 
     ],
 

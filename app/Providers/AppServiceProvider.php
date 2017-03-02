@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Finlaravel\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
