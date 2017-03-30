@@ -17,5 +17,11 @@ class UsersTableSeeder extends Seeder
             'name' => 'Eduardo Couto',
             'email' => 'eduardo.lcouto@gmail.com'
         ]);
+
+        factory(\Finlaravel\User::class,1)
+            ->create([
+                'name' => 'Cliente Lopes',
+                'email' => 'clientelopes@user.com'
+            ]);
     }
 }
