@@ -1,0 +1,21 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Colors
+@import "node_modules/materialize-css/sass/components/color";
+
+// Variables
+@import "variables";
+
+// Materialize
+@import "node_modules/materialize-css/sass/materialize";
+#app{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
