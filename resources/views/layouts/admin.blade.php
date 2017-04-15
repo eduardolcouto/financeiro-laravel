@@ -32,6 +32,7 @@
                     'menus' => [
                         ['nome' => 'contas a pagar', 'url' => '/teste','dropdownId' => 'teste'],
                         ['nome' => 'contas a receber', 'url' => '/teste1'],
+                        ['nome' => 'Relatórios', 'url' => '/relatorios', 'dropdownId' => 'relatorios']
                     ],
                     'menusDropdown'=>[
                         [   
@@ -40,6 +41,16 @@
                                 ['nome'=>'Listar contas','url' => '/listar'],
                                 ['nome'=>'Criar conta','url' => '/criar'],
                             ]                            
+                        ],
+                        [
+                            'id' => 'relatorios',
+                            'items' => [
+                                ['nome' => 'Fluxo de Caixa', 'url' => '/fluxo-de-caixa'],
+                                ['nome' => 'Somatória por Despesa', 'url' => '/somatoria-por-despesa'],
+                                ['nome' => 'Gráfico por Despesa', 'url' => '/grafico-por-despesa'],
+
+                            ]
+
                         ]
                     ],
                     'urlLogout' => env('URL_ADMIN_LOGOUT'),
