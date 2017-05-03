@@ -7,7 +7,7 @@
             <div class="row" v-if="error.has">
                 <div class="col s12">
                     <div class="card-panel red">
-                        <spam class="white-text">{{error.message}}</spam>
+                        <span class="white-text">{{error.message}}</span>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,15 @@
                     .then(() => {this.$router.go({'name':'dashboard'})})
                     .catch((responseError) => {
                         this.error.has = true;
-                        this.error.message = responseError.data.message;
+                        switch (responseError.status) {
+                            case 401:
+                                this.error.message = responseError.data.message;
+                                break;
+                        
+                            default:
+                                this.error.message = 'Login Failed!';
+                                break;
+                        }                       
                     });
             }
         }
