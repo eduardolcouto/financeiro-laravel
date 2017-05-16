@@ -12,11 +12,14 @@ return [
      |
      */
     'supportsCredentials' => false,
-    'allowedOrigins' => ['http://localhost:3000','chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'],
+    'allowedOrigins' => [
+        'http://localhost:3000',
+        'http://localhost:8000',
+        'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['*'],
     'exposedHeaders' => [],
     'maxAge' => 0,
-    'hosts' => [],
+    'hosts' => []
 ];
 

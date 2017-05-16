@@ -27,7 +27,6 @@ Route::group(['middleware' => 'cors', 'as'=>'api.'], function(){
         return $user;
     })->name('user');
   });
-    
 });
 
 

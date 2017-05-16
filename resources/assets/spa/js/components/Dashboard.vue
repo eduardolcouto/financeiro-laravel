@@ -17,10 +17,10 @@
 <script type="text/javascript">
     
     import Auth from '../services/auth';
-
+    import {User} from '../services/resources';
     export default {
         ready(){
-            console.log(Auth.user());
+            //console.log(Auth.user());
         }
     }
 </script>
