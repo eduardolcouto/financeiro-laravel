@@ -1,7 +1,7 @@
 <template>
     <div id="app">
         <header>
-
+            <menu v-if="showMenu"></menu>
         </header>
         <main>
            <router-view></router-view> 
@@ -18,11 +18,22 @@
 </template>
 
 <script type="text/javascript">
+    import Auth from './../services/auth';
+    import MenuComponent from './Menu.vue';
     export default {
+        components: {
+          'menu': MenuComponent,
+        },
         data() {
             return {
-                year: new Date().getFullYear()
+                year: new Date().getFullYear(),
+                user: Auth.user
             };
+        },
+        computed:{
+            showMenu(){
+                return this.user.check && this.$route.name != 'auth.login';
+            }
         }
     }
 </script>
