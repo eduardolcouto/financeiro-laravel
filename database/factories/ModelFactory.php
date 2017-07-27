@@ -12,7 +12,7 @@
 */
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory->define(Finlaravel\User::class, function (Faker\Generator $faker) {
+$factory->define(\Finlaravel\Models\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
@@ -23,9 +23,9 @@ $factory->define(Finlaravel\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->state(Finlaravel\User::class,'admin' ,function ($faker) {
+$factory->state(\Finlaravel\Models\User::class,'admin' ,function ($faker) {
 
     return [
-        'role' => \Finlaravel\User::ROLE_ADMIN,
+        'role' => \Finlaravel\Models\User::ROLE_ADMIN,
     ];
 });

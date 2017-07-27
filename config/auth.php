@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => Finlaravel\User::class,
+            'model' => \Finlaravel\Models\User::class,
         ],
 
         // 'users' => [

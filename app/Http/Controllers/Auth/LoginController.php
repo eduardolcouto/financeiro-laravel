@@ -3,7 +3,7 @@
 namespace Finlaravel\Http\Controllers\Auth;
 
 use Finlaravel\Http\Controllers\Controller;
-use Finlaravel\User;
+use Finlaravel\Models\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 

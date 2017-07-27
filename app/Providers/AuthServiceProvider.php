@@ -2,7 +2,7 @@
 
 namespace Finlaravel\Providers;
 
-use Finlaravel\User;
+use Finlaravel\Models\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 

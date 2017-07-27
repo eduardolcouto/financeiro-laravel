@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => Finlaravel\User::class,
+        'model' => \Finlaravel\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
