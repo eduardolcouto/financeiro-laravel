@@ -29,3 +29,13 @@ $factory->state(\Finlaravel\Models\User::class,'admin' ,function ($faker) {
         'role' => \Finlaravel\Models\User::ROLE_ADMIN,
     ];
 });
+
+
+$factory->define(\Finlaravel\Models\Bank::class, function (Faker\Generator $faker) {
+    static $password;
+
+    return [
+        'name' => $faker->name,
+        'logo' => $faker->imageUrl(100,70,'abstract')
+    ];
+});

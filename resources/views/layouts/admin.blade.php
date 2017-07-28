@@ -30,9 +30,8 @@
                 $menuConfig = [
                     'name' => Auth::user()->name,
                     'menus' => [
-                        ['nome' => 'contas a pagar', 'url' => '/teste','dropdownId' => 'teste'],
-                        ['nome' => 'contas a receber', 'url' => '/teste1'],
-                        ['nome' => 'Relatórios', 'url' => '/relatorios', 'dropdownId' => 'relatorios']
+                        ['nome' => 'Banco', 'url' => route('admin.banks.index')],
+
                     ],
                     'menusDropdown'=>[
                         [   
