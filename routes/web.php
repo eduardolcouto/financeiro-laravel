@@ -35,5 +35,6 @@ Route::group([
         Route::group(['middleware' => 'can:access-admin',], function(){
             Route::get('home', 'HomeController@index')->name('home');
             Route::resource('banks','Admin\BanksController',['except' => 'show']);
+            Route::get('banks/{bank}/delete','Admin\BanksController@delete')->name('banks.delete');
         });
     });

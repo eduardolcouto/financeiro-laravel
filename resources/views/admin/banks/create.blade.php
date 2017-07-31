@@ -2,22 +2,24 @@
 
 @section('content')
 
-    <div class="container">
+    <div class="row">
         <div class="row">
+            <h4>Cadastro de novo Banco</h4>
+        </div>
+        <div class="container">
+            <div class="row">
 
-            {!! Form::open(['route' => 'admin.banks.store']) !!}
+                {!! Form::open(['route' => 'admin.banks.store']) !!}
+                @include('admin.banks._form')
                 <div class="row">
-                    <div class="input-field col s6">
-                        {!! Form::label('name', 'Nome') !!}
-                        {!! Form::text('name',null) !!}
-                    </div>
+                    {!! Form::submit('Criar Banco',['class' => 'btn blue waves-effect waves-light']) !!}
+                    <a href="{{route('admin.banks.index')}}" class="btn waves-effect waves-light">Cancelar Operação</a>
                 </div>
-                <div class="row">
-                    {!! Form::submit('Criar Banco',['class' => 'btn waves-effect waves-light']) !!}
-                </div>
-            {!! Form::close() !!}
+                {!! Form::close() !!}
 
+            </div>
         </div>
     </div>
+
 
 @endsection
