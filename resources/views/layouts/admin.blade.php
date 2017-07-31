@@ -30,7 +30,11 @@
                 $menuConfig = [
                     'name' => Auth::user()->name,
                     'menus' => [
-                        ['nome' => 'Banco', 'url' => route('admin.banks.index')],
+                        [
+                            'nome' => 'Banco',
+                            'url' => route('admin.banks.index'),
+                            'active' => isRouteActive('admin.banks.index')
+                        ],
 
                     ],
                     'menusDropdown'=>[
