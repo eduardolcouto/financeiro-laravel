@@ -35,13 +35,17 @@
                             'url' => route('admin.banks.index'),
                             'active' => isRouteActive('admin.banks.index')
                         ],
+                        /*[
+                            'nome' => 'Outro',
+                            'dropdownId' => 'teste'
+                        ],*/
 
                     ],
                     'menusDropdown'=>[
                         [   
                             'id' => 'teste',
                             'items' => [
-                                ['nome'=>'Listar contas','url' => '/listar'],
+                                ['nome'=>'Listar contas','url' => route('admin.banks.index'),'active' => isRouteActive('admin.banks.edit')],
                                 ['nome'=>'Criar conta','url' => '/criar'],
                             ]                            
                         ],
